@@ -8,6 +8,7 @@ const App = () => {
   return (
     <div>
       <h1>Plantilla basica</h1>
+      <p>Parrafo de prueba de deploy en Netlify</p>
     </div>
   );
 };
