@@ -1,0 +1,19 @@
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+        //otros presets
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "absoluteRuntime": false,
+                "corejs": false,
+                "regenerator": true,
+                "useESModules": true,
+                "version": "7.18.9"
+            }
+        ]
+    ]
+}
