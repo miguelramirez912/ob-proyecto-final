@@ -1,7 +1,7 @@
 // Importaciones de react
 import React from 'react';
 // import { ReactDOM } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 
 // Imports de Redux
 
@@ -16,9 +16,19 @@ import './styles/css/index.scss';
 
 // NODE_ENV.BASE_URL
 // Metodo render de ReactDom que nos permite renderizar el componente principal en el index.html
-ReactDOM.render(
+// Forma de renderizar en (React 17)
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root'),
+// );
+
+// Nueva forma de renderizar con createRoot (React 18)
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root'),
 );

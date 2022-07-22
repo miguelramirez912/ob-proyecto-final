@@ -1,4 +1,9 @@
 import React from 'react';
+import EjercicioDos from './Ejercicios/EjercicioDos';
+import EjercicioUno from './Ejercicios/EjercicioUno';
+// import TaskList from './List/TaskList';
+// import Settings from './settings/Settings';
+import '../styles/css/index.scss';
 
 /**
  * Función anonima para crear un componente principal.
@@ -7,8 +12,10 @@ import React from 'react';
 const App = () => {
   return (
     <div>
-      <h1>Plantilla basica</h1>
-      <p>Parrafo de prueba de deploy en Netlify</p>
+      {/* <TaskList />
+      <Settings /> */}
+      <EjercicioUno />
+      <EjercicioDos />
     </div>
   );
 };
